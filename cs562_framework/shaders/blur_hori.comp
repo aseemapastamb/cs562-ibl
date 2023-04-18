@@ -1,0 +1,48 @@
+#version 430 core
+
+// declare thread group size
+layout (local_size_x = 128, local_size_y = 1, local_size_z = 1) in;
+
+// source image; 4 channel 32 bit float read only
+layout (rgba32f) uniform readonly image2D src;
+// destination image; 4 channel 32 bit float write only
+layout (rgba32f) uniform writeonly image2D dst;
+
+// declare a uniform block
+uniform blur_kernel {
+	float weights[101];
+};
+
+// kernel half width
+uniform int w;
+
+// shared with other threads in the 128x1 thread group
+shared vec4 v[128 + 101];
+
+void main() {
+	// combination of group ID, group size, and local ID
+	ivec2 g_pos = ivec2(gl_GlobalInvocationID.xy);
+
+	// local thread ID in the 128x1 thread group
+	uint i = gl_LocalInvocationID.x;
+
+	// read an image at an ivec2(...) position
+	v[i] = imageLoad(src, g_pos + ivec2(-w, 0));
+
+	// some border threads must load extra w pixels on each side (so 2 * w)
+	if (i < (2 * w) + 1) {
+		v[i + 128] = imageLoad(src, g_pos + ivec2(128 - w, 0));
+	}
+
+	// wait for all threads to catch up before reading v[]
+	barrier();
+
+	// sum of (weights[0 ... 2w] * corresponding pixel)
+	vec4 sum = vec4(0);
+	for (uint j = 0; j < (2 * w) + 1; j++) {
+		sum += weights[j] * v[i + j];
+	}
+
+	// store sum at g_pos in destination image
+	imageStore(dst, g_pos, sum);
+}

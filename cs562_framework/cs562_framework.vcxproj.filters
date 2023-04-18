@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Cloth.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PointMass.cpp" />
+    <ClCompile Include="Spring.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Animation.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationData.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="AssimpHelper.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="VQS.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameRateManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SimManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="FBO.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cloth.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="PointMass.h" />
+    <ClInclude Include="Spring.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Animation.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationData.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="AssimpHelper.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Bone.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="VQS.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameRateManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SimManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_impl_opengl3.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="FBO.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{2810e71d-7e89-4d65-a465-2aeaf9616509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{275f4866-9110-4693-9c6e-90476aa5ae7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{98915b2c-0661-4a45-8dce-a867e22b9081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{bd444a27-edb2-4d74-ab18-08e454da2662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Deferred">
+      <UniqueIdentifier>{cd71b73f-2093-4d6b-b07e-7794b7eb7f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Compute">
+      <UniqueIdentifier>{37a59638-e185-415b-8d51-e4bf060d1a3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui.ini">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="shaders\debug.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\debug.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\light_cube.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\light_cube.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\line.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\line.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\sphere.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\sphere.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\texture.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\texture.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\deferred_lighting.frag">
+      <Filter>Shaders\Deferred</Filter>
+    </None>
+    <None Include="shaders\deferred_lighting.vert">
+      <Filter>Shaders\Deferred</Filter>
+    </None>
+    <None Include="shaders\g_buffer.frag">
+      <Filter>Shaders\Deferred</Filter>
+    </None>
+    <None Include="shaders\g_buffer.vert">
+      <Filter>Shaders\Deferred</Filter>
+    </None>
+    <None Include="shaders\light.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\deferred_local_lights.frag">
+      <Filter>Shaders\Deferred</Filter>
+    </None>
+    <None Include="shaders\deferred_local_lights.vert">
+      <Filter>Shaders\Deferred</Filter>
+    </None>
+    <None Include="shaders\shadow.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\shadow.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\blur_hori.comp">
+      <Filter>Shaders\Compute</Filter>
+    </None>
+    <None Include="shaders\blur_vert.comp">
+      <Filter>Shaders\Compute</Filter>
+    </None>
+    <None Include="shaders\sat.comp">
+      <Filter>Shaders\Compute</Filter>
+    </None>
+  </ItemGroup>
+</Project>

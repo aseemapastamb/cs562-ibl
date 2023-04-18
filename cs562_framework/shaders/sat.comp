@@ -1,0 +1,22 @@
+#version 430 core
+
+// declare thread group size
+layout (local_size_x = 16, local_size_y = 16, local_size_z = 1) in;
+
+// source image; 4 channel 32 bit float read only
+layout (rgba32f) uniform restrict readonly image2D src;
+// destination image; 4 channel 32 bit float write only
+layout (rgba32f) uniform restrict writeonly image2D dst;
+
+uniform ivec2 delta;
+
+void main() {
+	// combination of group ID, group size, and local ID
+	ivec2 g_pos = ivec2(gl_GlobalInvocationID.xy);
+
+	// prefix sum
+	vec4 outv = imageLoad(src, g_pos) + imageLoad(src, g_pos - delta);
+
+	// store sum at g_pos in destination image
+	imageStore(dst, g_pos, outv);
+}
